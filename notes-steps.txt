@@ -1,0 +1,20 @@
+- make directory
+- poetry init -n
+- poetry add django
+- poetry add --dev black flake8
+- python manage.py migrate
+- python manage.py runserver (check to see if it runs)
+- python manage.py startapp things
+- add things to Installed_apps in settings.py
+
+templates
+views
+urls
+
+- set up your view file in views.py in things
+- touch, make urls.py in things
+- set up things urls to talk to things views
+- add url pattern to top level url to access things
+- make template folder at the top level
+- make home.html in template folder
+- go to settings.py, add to "DIRS" in templates: 'DIRS': [BASE_DIR / "templates"],
